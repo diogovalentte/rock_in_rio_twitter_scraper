@@ -1,4 +1,5 @@
-# Rock in Rio (2022) Twitter Scrapper
+# Rock in Rio (2022) Twitter Scrapper - DEPRECATED due to Twitter recent API changes.
+---
 ## OBJECTIVES: 
 1. Get data of the hashtag #RockinRio2022 (or others) from Twitter.
 2. Create an index on Elasticsearch (running on Docker) and populate with the hashtag data.
