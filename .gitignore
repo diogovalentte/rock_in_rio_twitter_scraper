@@ -1,0 +1,12 @@
+# Python
+.venv
+__pycache__
+
+# Vscode
+.vscode
+
+# Secret
+.env
+
+es_data
+mongodb_data
