@@ -1,12 +1,12 @@
 # Rock in Rio (2022) Twitter Scrapper - DEPRECATED due to Twitter recent API changes.
 ---
 ## OBJECTIVES: 
-1. Get data of the hashtag #RockinRio2022 (or others) from Twitter.
-2. Create an index on Elasticsearch (running on Docker) and populate with the hashtag data.
-3. Create a collection in MongoDB (running on Docker) and populate with the hashtag data.
+1. Get data on the hashtag #RockinRio2022 (or others) from Twitter.
+2. Create an index on Elasticsearch (running on Docker) and populate it with the hashtag data.
+3. Create a collection in MongoDB (running on Docker) and populate it with the hashtag data.
 ---
 ## Tweets Data Schema:
-The bellow JSON is an example of the documents in the Elasticsearch and MongoDB.
+The below JSON is an example of the documents in Elasticsearch and MongoDB.
 ```json
 {
     "created_datetime":, 
@@ -26,11 +26,11 @@ The bellow JSON is an example of the documents in the Elasticsearch and MongoDB.
 
 ---
 1. Create a file named "**.env**", this file should be equal to the "**.env.example**" file. You can just copy the file (use default variables) or change the variables.
-2. Create a folder that Elasticsearch can store data:
+2. Create a folder where Elasticsearch can store data:
 ```sh
 mkdir es_data && chown 1000:1000 es_data
 ```
-3. Execute the bellow command to create the Docker containers of Elasticsearch and MongoDB in background:
+3. Execute the bellow command to create the Docker containers of Elasticsearch and MongoDB in the background:
 ```sh
 docker compose up -d
 ```
@@ -58,7 +58,7 @@ docker compose down
 ```sh
 docker exec <container name/id> <command>
 ```
-#### Show a container logs:
+#### Show a container log:
 ```sh
 docker logs <container name/id>
 ```
